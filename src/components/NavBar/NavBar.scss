@@ -1,0 +1,49 @@
+.navbar {
+    height: 75px;
+    position: relative;
+    opacity: .6;
+    
+    .navbar-logo {
+        height: 3rem;
+        position: absolute;
+        left: 3.5%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .nav-links {
+        display: flex;
+        position: absolute;
+        right: 7.5%;
+        top: 50%;
+        transform: translateY(-50%);
+        font-family: 'Roboto Condensed';
+        
+        list-style-type: none;
+        li {
+            padding: 0 20px;
+            
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 600;
+        }
+    }
+}
+
+.hamburger {
+      position: absolute;
+      cursor: pointer;
+      right: 5%;
+      top: 50%;
+      transform: translate(-5%, -50%);
+      z-index: 2;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+  }

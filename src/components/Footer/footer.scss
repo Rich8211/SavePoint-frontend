@@ -1,0 +1,27 @@
+.footer-container {
+    height: 5rem;
+    width: 100%;
+    opacity: 0.6;
+    text-align: center;
+    color: #fff;
+    
+
+    .links {
+        margin: 15px auto;
+        font-size: 0.85rem;
+        a {
+            color: #fff;
+
+        }
+
+        * {
+            padding: 0 5px;
+        }
+    }
+
+    .copy-right {
+        font-size: 0.7rem;
+        margin: auto;
+    }
+
+}
