@@ -1,11 +1,11 @@
 import React,{ useContext } from 'react';
-import LandingPageButton from '../components/LandingPageButton/LandingPageButton';
-import FeaturedCard from '../components/featured-event-card/featured-event-card';
-import { featured_data } from "../assets/featuredData";
-import UserDataContext from '../context/UserDataContext';
+import LandingPageButton from '../../components/LandingPageButton/LandingPageButton';
+import FeaturedCard from '../../components/featured-event-card/featured-event-card';
+import { featured_data } from "../../assets/featuredData";
+import UserDataContext from '../../context/UserDataContext';
 
-import city from '../assets/city.png'
-import orange from '../assets/OrangeBg.png'
+import city from '../../assets/city.png'
+import orange from '../../assets/OrangeBg.png'
 
 import './LandingPage.scss';
 

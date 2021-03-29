@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useReducer} from 'react'
 import { Route, BrowserRouter, Switch } from "react-router-dom";
-import LandingPage from './pages/LandingPage';
+import LandingPage from './pages/LandingPage/LandingPage';
+import Dashboard from './pages/dashboard/Dashboard';
 import Navbar from './components/NavBar/Navbar';
 import Footer from './components/Footer/footer';
 import UserContext from './context/UserContext';
@@ -77,6 +78,7 @@ function App() {
               <Navbar/>
               <Switch>
                 <Route exact path="/" component={LandingPage} />
+                <Route path="/dashboard" component={Dashboard}/>
               </Switch>
               <Footer />
             </UserDataContext.Provider>
