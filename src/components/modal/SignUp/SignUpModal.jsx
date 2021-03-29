@@ -29,8 +29,6 @@ const SignUpModal = ({ history }) => {
 
   const { toggleModal, dispatch } = useContext(UserDataContext);
 
-  const { setUserData } = useContext(UserContext);
-
   const updateField = (e) => {
     setState({
       ...form,
@@ -46,30 +44,8 @@ const SignUpModal = ({ history }) => {
     });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    let formData = new FormData();
-    formData.append("profilePic", profilePic);
-    formData.append("username", username);
-    formData.append("password", password);
-    formData.append("passwordCheck", passwordCheck);
-    formData.append("email", email);
-    formData.append("bio", bio);
-    formData.append("events");
-
-    await Axios.post("http://localhost:5000/users/register", formData);
-    const loginRes = await Axios.post("http://localhost:5000/users/login", {
-      username,
-      password,
-    });
-    setUserData({
-      token: loginRes.data.token,
-      user: loginRes.data.user,
-    });
-    localStorage.setItem("auth-token", loginRes.data.token);
-    dispatch({type:"SET_MODAL", payload:""})
-    history.push("/dashboard");
+  const handleSubmit = (e) => {
+   
   };
 
   useEffect(() => {
